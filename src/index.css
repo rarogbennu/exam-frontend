@@ -1,0 +1,13 @@
+body {
+  background-color: #000;  /* Set background color to black */
+  color: #fff;  /* Set default text color to white */
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+input, button {
+  color: #333;
+}
