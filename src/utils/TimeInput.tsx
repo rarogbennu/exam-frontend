@@ -22,34 +22,42 @@ const TimeInput: React.FC<TimeInputProps> = ({ value, onChange }) => {
         type="number"
         value={hours}
         onChange={(e) => setHours(Number(e.target.value))}
-        placeholder="hh"
+        placeholder="HH"
         min="0"
         max="23"
-      />:
+        style={{ width: '40px' }}
+      />
+      <span>:</span>
       <input
         type="number"
         value={minutes}
         onChange={(e) => setMinutes(Number(e.target.value))}
-        placeholder="mm"
+        placeholder="MM"
         min="0"
         max="59"
-      />:
+        style={{ width: '40px' }}
+      />
+      <span>:</span>
       <input
         type="number"
         value={seconds}
         onChange={(e) => setSeconds(Number(e.target.value))}
-        placeholder="ss"
+        placeholder="SS"
         min="0"
         max="59"
-      />.
+        style={{ width: '40px' }}
+      />
+      <span>.</span>
       <input
         type="number"
         value={hundredths}
         onChange={(e) => setHundredths(Number(e.target.value))}
-        placeholder="ss"
+        placeholder="CC"
         min="0"
         max="99"
+        style={{ width: '40px' }}
       />
+      <span> (HH:MM:SS.CC)</span>
     </div>
   );
 };
